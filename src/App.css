@@ -10,3 +10,43 @@
   font-family: "euclid600";
   src: url(./assets/fonts/euclid/EuclidGalactic-4G.ttf);
 }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.menulink {
+  color: rgba(0, 9, 51, 0.4);
+  font-family: euclid;
+  font-size: 48px;
+  font-style: normal;
+  line-height: 56px; /* 116.667% */
+}
+.menulink li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #0030ff;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
+.menulink li.active {
+  color: #0030ff;
+  font-family: euclid;
+  font-size: 48px;
+  font-style: normal;
+  line-height: 56px; /* 116.667% */
+}
+
+.menulink li.active::after {
+  transform: scaleX(1); /* Show the line for active items */
+}
+
+.closeshadow {
+  box-shadow: 0px 32px 32px 0px rgba(1, 19, 103, 0.08);
+}
