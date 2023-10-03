@@ -33,7 +33,7 @@
 .menulink li:hover {
   color: #0030ff;
   font-family: euclid;
-  font-size: 48px;
+  font-size: 24px;
   font-style: normal;
   line-height: 56px; /* 116.667% */
 }
@@ -70,6 +70,13 @@
 @media screen and (min-width: 768px) {
   .menulink {
     color: rgba(0, 9, 51, 0.4);
+    font-family: euclid;
+    font-size: 48px;
+    font-style: normal;
+    line-height: 56px; /* 116.667% */
+  }
+  .menulink li:hover {
+    color: #0030ff;
     font-family: euclid;
     font-size: 48px;
     font-style: normal;
