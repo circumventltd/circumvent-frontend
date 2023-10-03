@@ -13,10 +13,9 @@
 
 .menulink {
   color: rgba(0, 9, 51, 0.4);
-  font-family: Euclid Galactic;
+  font-family: euclid;
   font-size: 24px;
   font-style: normal;
-  font-weight: 400;
   line-height: 32px; /* 133.333% */
 }
 .menulink li::after {
