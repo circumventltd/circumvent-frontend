@@ -11,18 +11,13 @@
   src: url(./assets/fonts/euclid/EuclidGalactic-4G.ttf);
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 .menulink {
   color: rgba(0, 9, 51, 0.4);
-  font-family: euclid;
-  font-size: 48px;
+  font-family: Euclid Galactic;
+  font-size: 24px;
   font-style: normal;
-  line-height: 56px; /* 116.667% */
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
 }
 .menulink li::after {
   content: "";
@@ -35,7 +30,7 @@
   transition: transform 0.3s ease;
 }
 
-.menulink li.active {
+.menulink li:hover {
   color: #0030ff;
   font-family: euclid;
   font-size: 48px;
@@ -43,7 +38,7 @@
   line-height: 56px; /* 116.667% */
 }
 
-.menulink li.active::after {
+.menulink li:hover::after {
   transform: scaleX(1); /* Show the line for active items */
 }
 
@@ -66,4 +61,21 @@
 
 .rotate-180.active {
   transform: rotate(30deg);
+}
+
+/* sm */
+@media screen and (min-width: 640px) {
+}
+/* md */
+@media screen and (min-width: 768px) {
+  .menulink {
+    color: rgba(0, 9, 51, 0.4);
+    font-family: euclid;
+    font-size: 48px;
+    font-style: normal;
+    line-height: 56px; /* 116.667% */
+  }
+}
+/* lg */
+@media screen and (min-width: 1024px) {
 }

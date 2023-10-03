@@ -6,7 +6,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="bg-[#000933] min-h-[800px] md:min-h-[700px] lg:min-h-[800px] relative">
+    <div className="bg-[#000933] h-screen  relative">
       <div className="absolute top-0 h-full w-full">
         <img src="/hand.svg" className="h-full" />
       </div>

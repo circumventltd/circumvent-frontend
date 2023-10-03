@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -8,8 +8,9 @@ type Props = {
 
 const Homelayout = ({ children }: Props) => {
   return (
-    <div>
+    <div className="relative">
       <Header />
+
       {children}
       <Footer />
     </div>

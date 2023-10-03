@@ -3,10 +3,32 @@
 @tailwind utilities;
 
 @keyframes pulse {
-  50% {
-    opacity: 0.8;
+  60% {
+    scale: 0.6;
+  }
+  70% {
+    scale: 0.7;
+  }
+  80% {
+    scale: 0.8;
+  }
+  90% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 1;
   }
 }
 .pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.hiddenscroll {
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hiddenscroll::-webkit-scrollbar {
+  display: none;
 }
