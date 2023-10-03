@@ -3,7 +3,7 @@ import { HiArrowDown } from "react-icons/hi";
 import Arrowicon from "./svgs/Arrowicon";
 
 type Props = {
-  color: String;
+  color: string;
   title: String;
   subtitle: String;
   subcolor?: string;
@@ -29,7 +29,8 @@ const Servicetemplate = ({
 }: Props) => {
   return (
     <div
-      className={`bg-[${color}] min-w-[100vw] snap-start min-h-[400px]  relative`}
+      style={{ backgroundColor: color }}
+      className={`min-w-[100vw] snap-start min-h-[400px]  relative`}
     >
       <div className="bg-white mix-blend-overlay rounded-[400px] blur-[200px] w-[400px] h-[400px] absolute top-0 right-0"></div>
       {/* content */}
@@ -76,7 +77,10 @@ const Servicetemplate = ({
         <div className="flex flex-col lg:flex-row items-start gap-[24px] lg:items-center justify-between mt-[40px]">
           <div className="mt-auto rotate-0 lg:rotate-90">
             {/* <Arrowicon arrowcolor={arrowcolor} /> */}
-            <HiArrowDown className={`text-[50px] text-[${arrowcolor}]`} />
+            <HiArrowDown
+              style={{ color: arrowcolor }}
+              className={`text-[50px]`}
+            />
           </div>
           <div className="flex flex-col gap-[40px] max-w-[480px]">
             <div

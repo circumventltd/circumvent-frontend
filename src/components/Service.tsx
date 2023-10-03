@@ -79,7 +79,7 @@ const servicesdata = [
 
 const Service = (props: Props) => {
   return (
-    <div className="max-w-screen  flex snap-mandatory snap-x  overflow-x-scroll">
+    <div className="max-w-screen hiddenscroll  flex snap-mandatory snap-x  overflow-x-scroll">
       {servicesdata.map((item, index) => (
         <Servicetemplate
           key={index}
