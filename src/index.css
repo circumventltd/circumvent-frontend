@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+@keyframes pulse {
+  0% {
+    transform: translateX(-50%) translateY(50%) scale(1);
+  }
+  60% {
+    transform: translateX(-50%) translateY(50%) scale(0.6);
+  }
+  70% {
+    transform: translateX(-50%) translateY(50%) scale(0.7);
+  }
+  80% {
+    transform: translateX(-50%) translateY(50%) scale(0.8);
+  }
+  90% {
+    transform: translateX(-50%) translateY(50%) scale(0.9);
+  }
+  100% {
+    transform: translateX(-50%) translateY(50%) scale(1);
+  }
+}
+
+
+.hiddenscroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hiddenscroll::-webkit-scrollbar {
+  display: none;
+}
