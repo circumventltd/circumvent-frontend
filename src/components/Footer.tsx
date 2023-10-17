@@ -14,7 +14,7 @@ const Footer = (props: Props) => {
         </h2>
       </div>
       <div className="relative">
-        <img src="/grids.png" alt="grids" className="pulse" />
+        <img src="/grids.png" alt="grids"/>
         <div className="w-[100px] sm:w-[212px] lg:w-[512px] h-[100px] sm:h-[212px] lg:h-[512px] rounded-full bg-[#0030FF] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-white text-[24px] lg:text-[72px] leading-[56px] lg:leading-[80px] flex items-center justify-center">
           <p className="">Let&apos;s talk</p>
         </div>
