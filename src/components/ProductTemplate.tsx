@@ -14,8 +14,8 @@ const ProductTemplate = (props: Props) => {
           Just the perfect home care software
         </h2>
       </div>
-      <div className="my-[80px]">
-        <img src="/image.png" alt="caresea" />
+      <div className="my-[80px] w-full bg-[red]">
+        <img src="/image.png" alt="caresea" className="w-full" />
       </div>
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-[24px]">
         <div className="rotate-90 lg:rotate-0">

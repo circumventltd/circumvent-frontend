@@ -47,9 +47,7 @@
 .contact-text {
   color: #000933;
   font-family: euclid;
-  font-size: 16px;
   font-style: normal;
-  line-height: 24px; /* 150% */
 }
 .sidemenutrans {
   transition: max-width 0.3s cubic-bezier(0.25, 1, 0.5, 1);
@@ -71,7 +69,7 @@
 }
 .grid-mat-section .grid-item {
   height: 8rem;
-  border: 0.02px solid rgba(128, 128, 128, .5);
+  border: 0.02px solid rgba(128, 128, 128, 0.5);
   border-right: none;
   display: flex;
   align-items: flex-end;
@@ -80,7 +78,7 @@
   border-bottom: none;
 }
 .grid-mat-section .grid-container > :nth-child(9n) {
-  border-right: 0.05px solid rgba(128, 128, 128, .5);
+  border-right: 0.05px solid rgba(128, 128, 128, 0.5);
 }
 /* Ellipses, bl=blue and bk=black */
 .ellipse {
@@ -130,43 +128,43 @@
 /* sm */
 @media screen and (max-width: 640px) {
   /* GridMat Component */
-.grid-mat-section .grid-item {
-  height: 3rem;
-}
-/* Ellipses, bl=blue and bk=black */
-.bk-1,
-.bl-1 {
-  width: .5rem;
-  height: .5rem;
-}
-.bk-1-5,
-.bl-1-5 {
-  width: .75rem;
-  height: .75rem;
-}
-.bk-2,
-.bl-2 {
-  width: 1rem;
-  height: 1rem;
-  animation-delay: 2s;
-}
-.bk-2-5,
-.bl-2-5 {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-.bk-3,
-.bl-3 {
-  width: 1.5rem;
-  height: 1.5rem;
-  animation-delay: 3s;
-}
-.bk-4,
-.bl-4 {
-  width: 2rem;
-  height: 2rem;
-  animation-delay: 2.5s;
-}
+  .grid-mat-section .grid-item {
+    height: 3rem;
+  }
+  /* Ellipses, bl=blue and bk=black */
+  .bk-1,
+  .bl-1 {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  .bk-1-5,
+  .bl-1-5 {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  .bk-2,
+  .bl-2 {
+    width: 1rem;
+    height: 1rem;
+    animation-delay: 2s;
+  }
+  .bk-2-5,
+  .bl-2-5 {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .bk-3,
+  .bl-3 {
+    width: 1.5rem;
+    height: 1.5rem;
+    animation-delay: 3s;
+  }
+  .bk-4,
+  .bl-4 {
+    width: 2rem;
+    height: 2rem;
+    animation-delay: 2.5s;
+  }
 }
 /* md */
 @media screen and (min-width: 768px) {
@@ -187,4 +185,18 @@
 }
 /* lg */
 @media screen and (min-width: 1024px) {
+  .menulink {
+    color: rgba(0, 9, 51, 0.4);
+    font-family: euclid;
+    font-size: 70px;
+    font-style: normal;
+    line-height: 64px;
+  }
+  .menulink li:hover {
+    color: #0030ff;
+    font-family: euclid;
+    font-size: 70px;
+    font-style: normal;
+    line-height: 64px;
+  }
 }

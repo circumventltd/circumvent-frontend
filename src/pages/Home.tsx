@@ -4,9 +4,9 @@ import Hero from "../components/Hero";
 import Service from "../components/Service";
 import Products from "../components/Products";
 import Testimonials from "../components/Testimonials";
-import GridMat from "../components/GridMat"
+import GridMat from "../components/GridMat";
 import Footer from "../components/Footer";
-
+import Faq from "../components/Faq";
 
 type Props = {};
 
@@ -31,6 +31,9 @@ const Home = (props: Props) => {
         </section>
         <section className="">
           <Testimonials />
+        </section>
+        <section className="">
+          <Faq />
         </section>
         {/* <Sidemenu /> */}
         <section className="">

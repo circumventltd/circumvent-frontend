@@ -1,16 +1,17 @@
 import React from "react";
 import Arrowicon from "./svgs/Arrowicon";
 
-interface ITestiomial {
-  testimonial: {
+interface IFaqs {
+  faq: {
     name: String;
     title: String;
     comment: String;
   };
 }
 
-const TestimonialsTemplate = ({ testimonial }: ITestiomial) => {
-  const { name, title, comment } = testimonial;
+const Faqtemplate = ({ faq }: IFaqs) => {
+  const { name, title, comment } = faq;
+
   return (
     <div className="flex min-w-full mt-auto pl-1 snap-start flex-col lg:flex-row justify-between gap-[24px]">
       <div className="mt-[80px] lg:mt-auto">
@@ -38,4 +39,4 @@ const TestimonialsTemplate = ({ testimonial }: ITestiomial) => {
   );
 };
 
-export default TestimonialsTemplate;
+export default Faqtemplate;
