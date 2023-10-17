@@ -28,6 +28,7 @@ const Faqtemplate = ({ faq }: IFaqs) => {
           <h2 className="text-[#000933] text-[24px] font-euclid500 leading-[32px]">
             {question}
           </h2>
+          <h2></h2>
         </div>
         <p className="font-euclid leading-[24px] text-[#000933a3] pr-2 mt-[40px]">
           {answer}
