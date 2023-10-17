@@ -61,7 +61,25 @@
 }
 
 /* GridMat Component */
+.lets-talk {
+  background: #0030ff;
+  width: 27rem;
+  height: 27rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lets-talk h3 {
+  font-size: 4rem;
+}
 .grid-mat-section .grid-container {
+  position: relative;
   margin: 0 auto;
   display: grid;
   max-width: auto;
@@ -128,6 +146,13 @@
 /* sm */
 @media screen and (max-width: 640px) {
   /* GridMat Component */
+  .lets-talk {
+    width: 13rem;
+    height: 13rem;
+  }
+  .lets-talk h3{
+    font-size: 3rem;
+  }
   .grid-mat-section .grid-item {
     height: 3rem;
   }
@@ -167,7 +192,15 @@
   }
 }
 /* md */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+    .lets-talk {
+    width: 16rem;
+    height: 16rem;
+  }
+  .lets-talk h3{
+    font-size: 3rem;
+  }
+  
   .menulink {
     color: rgba(0, 9, 51, 0.4);
     font-family: euclid;

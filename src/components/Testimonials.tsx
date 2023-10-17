@@ -1,6 +1,6 @@
 import React from "react";
 import TestimonialsTemplate from "./TestimonialsTemplate";
-import { testimonialData } from ".././data/data";
+import { testimonialData } from "../data/data";
 
 type Props = {};
 
