@@ -1,5 +1,5 @@
 import React from "react";
-import { testimonialData } from "../data/data";
+import { faqs } from "../data/data";
 import Faqtemplate from "./Faqtemplate";
 
 type Props = {};
@@ -17,7 +17,7 @@ const Faq = (props: Props) => {
         Frequently Asked Questions
       </h1>
       <div className="flex max-w-[100vw] overflow-x-scroll snap-mandatory snap-x my-auto ">
-        {testimonialData.map((faq, index) => (
+        {faqs.map((faq, index) => (
           <Faqtemplate key={index} faq={faq} />
         ))}
       </div>
