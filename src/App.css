@@ -150,7 +150,7 @@
     width: 13rem;
     height: 13rem;
   }
-  .lets-talk h3{
+  .lets-talk h3 {
     font-size: 3rem;
   }
   .grid-mat-section .grid-item {
@@ -193,14 +193,14 @@
 }
 /* md */
 @media screen and (max-width: 768px) {
-    .lets-talk {
+  .lets-talk {
     width: 16rem;
     height: 16rem;
   }
-  .lets-talk h3{
+  .lets-talk h3 {
     font-size: 3rem;
   }
-  
+
   .menulink {
     color: rgba(0, 9, 51, 0.4);
     font-family: euclid;
