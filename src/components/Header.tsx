@@ -1,31 +1,61 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "./Logo";
 import Logotext from "./Logotext";
+import Contact from "./Contact";
 import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 
-type Props = {};
+interface WindowSize {
+  width: number;
+  height: number;
+}
 
-const Header = (props: Props) => {
+const Header = () => {
   const [showsidebar, setShowsidebar] = useState(false);
+  const [contact, setIsContact] = useState(false);
+
+  const [widthSize, setWidthSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+      setWidthSize(window.innerWidth);
+    }
+
+    // Add a window resize event listener
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const hidemenu = () => {
-    setShowsidebar(!showsidebar);
+    setShowsidebar(false);
   };
 
   const showmenu = () => {
-    setShowsidebar(!showsidebar);
+    setShowsidebar(true);
+  };
+
+  const showContact = () => {
+    setIsContact(true);
+  };
+
+  const hideContact = () => {
+    setIsContact(false);
   };
 
   return (
     <>
       <div className="bg-[url('/img1-min.jpg')] w-full h-[400px] lg:h-[600px] bg-cover relative">
-        <div className="absolute top-[30px] lg:top-[50px] w-full  left-0  px-[24px] lg:px-[80px]">
-          <div className="bg-white flex justify-between items-center px-[40px] py-[24px]">
-            <div className="flex items-center gap-[6px]">
+        <div className='absolute top-[30px] lg:top-[50px] w-full  left-0  px-[24px] lg:px-[80px]'>
+          <div className='bg-white flex justify-between items-center px-[40px] py-[24px]'>
+            <div className='flex items-center gap-[6px]'>
               <Logo />
               <Logotext />
             </div>
-            <BiMenu onClick={showmenu} className="text-[24px]" />
+            <BiMenu onClick={showmenu} className='text-[24px]' />
           </div>
         </div>
       </div>
@@ -37,54 +67,85 @@ const Header = (props: Props) => {
           showsidebar ? "w-full bg-[#00093366]" : "w-0"
         }`}
       >
-        <div className="flex absolute top-0 right-0 w-full h-full  ">
-          <div className=" flex justify-end flex-1">
+        <div className='flex absolute top-0 right-0 w-full h-full  '>
+          <div className=' flex md:justify-end md:flex-1'>
             <div
               onClick={hidemenu}
               className={`${
-                showsidebar
+                showsidebar && widthSize >= 640
                   ? "bg-white mt-[30px] lg:mt-[50px] mr-[5rem] ml-[1rem] closeshadow rounded-full p-[24px] h-[72px] w-[72px] "
                   : " hidden "
               }`}
             >
-              <AiOutlineClose className="text-[24px] text-[#000933]" />
+              <AiOutlineClose className='text-[24px] text-[#000933]' />
             </div>
           </div>
+
           <div
             className={`${
               showsidebar ? " bg-white h-full flex-[4] " : "w-0 opacity-0 "
             }`}
           >
-            <div className="p-[24px] md:p-[80px] lg:py-[120px] flex flex-col h-full">
-              <div className="flex flex-col gap-[40px]">
-                <h2 className="font-euclid600 leading-[24px] lg:text-[30px] tracking-[4px]">
-                  MENU
-                </h2>
-                <ul className="menulink mt-8 flex flex-col gap-[24px] lg:gap-[50px] ">
-                  <li className=" flex gap-[24px] items-center">Home</li>
-                  <li className=" flex gap-[24px] items-center">About</li>
-                  <li className=" flex gap-[24px] items-center">Services</li>
-                  <li className=" flex gap-[24px] items-center">Product</li>
-                  <li className=" flex gap-[24px] items-center whitespace-nowrap">
-                    Contact us
-                  </li>
-                </ul>
-              </div>
-              <div className="mt-auto flex flex-col md:flex-row gap-[24px] md:items-center md:justify-between lg:text-[30px] leading-[24px] lg:leading-[44px]">
-                <div className="flex flex-col">
-                  <span className="contact-text">+44(730) 525 7707</span>
-                  <span className="contact-text">+44(730) 633 8999</span>
-                  <span className="contact-text">
-                    admin@circumventltd.co.uk
-                  </span>
+            {!contact ? (
+              <div className='p-[24px] md:p-[80px] lg:py-[40px] flex flex-col h-full'>
+                <div className='flex flex-col md:gap-[10px]'>
+                  <menu className='flex justify-between'>
+                    <h2 className='font-euclid600 leading-[24px] lg:text-[30px] tracking-[4px]'>
+                      MENU
+                    </h2>
+                    {widthSize >= 640 ? (
+                      ""
+                    ) : (
+                      <AiOutlineClose onClick={hidemenu} />
+                    )}
+                  </menu>
+                  <ul className='menulink mt-5 flex flex-col gap-[24px] lg:gap-[30px] '>
+                    <li className=' flex gap-[24px] items-center text-2xl '>
+                      Home
+                    </li>
+                    <li className=' flex gap-[24px] items-center text-2xl'>
+                      About
+                    </li>
+                    <li className=' flex gap-[24px] items-center text-2xl'>
+                      Services
+                    </li>
+                    <li className=' flex gap-[24px] items-center text-2xl'>
+                      Product
+                    </li>
+                    <li
+                      className=' flex gap-[24px] items-center whitespace-nowrap text-2xl'
+                      onClick={showContact}
+                    >
+                      Contact us
+                    </li>
+                  </ul>
                 </div>
-                <div className="flex flex-col">
-                  <span className="contact-text">Address (Line 1)</span>
-                  <span className="contact-text">Address (Line 2)</span>
-                  <span className="contact-text">City, state</span>
+                <div className='mt-auto flex flex-col md:flex-row gap-[24px] md:items-center md:justify-between lg:text-[30px] leading-[24px] lg:leading-[44px]'>
+                  <div className='flex flex-col'>
+                    <span className='contact-text text-base'>
+                      +44(730) 525 7707
+                    </span>
+                    <span className='contact-text text-base'>
+                      +44(730) 633 8999
+                    </span>
+                    <span className='contact-text text-base'>
+                      admin@circumventltd.co.uk
+                    </span>
+                  </div>
+                  <div className='flex flex-col'>
+                    <span className='contact-text text-base'>
+                      Address (Line 1)
+                    </span>
+                    <span className='contact-text text-base'>
+                      Address (Line 2)
+                    </span>
+                    <span className='contact-text text-base'>City, state</span>
+                  </div>
                 </div>
               </div>
-            </div>
+            ) : (
+              <Contact onClose={hideContact} widthSize={widthSize} />
+            )}
           </div>
         </div>
       </div>
