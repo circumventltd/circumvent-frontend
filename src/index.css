@@ -26,7 +26,6 @@ html {
   }
 }
 
-
 .hiddenscroll {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -34,14 +33,15 @@ html {
 .hiddenscroll::-webkit-scrollbar {
   display: none;
 }
-form input, textarea{
-/* Actual css */
-border: 0px;
-outline: 0px;
-border-bottom: 1px rgb(203 213 225) solid;
+form input,
+textarea {
+  /* Actual css */
+  border: 0px;
+  outline: 0px;
+  border-bottom: 1px rgb(203 213 225) solid;
 }
 
-/* CSS for Focus */ 
-form input:focus, textarea:focus{
+/* CSS for Focus */
+/* form input:focus, textarea:focus{
 border-bottom: 2px black solid;
-}
+} */

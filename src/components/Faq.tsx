@@ -1,6 +1,7 @@
 import React from "react";
 import { faqs } from "../data/data";
 import Faqtemplate from "./Faqtemplate";
+import Arrowicon from "./svgs/Arrowicon";
 
 type Props = {};
 
@@ -16,10 +17,19 @@ const Faq = (props: Props) => {
       <h1 className="font-euclid text-[48px] lg:text-[72px] leading-[56px] lg:leading-[80px] text-headertext">
         Frequently Asked Questions
       </h1>
-      <div className="flex max-w-[100vw] overflow-x-scroll snap-mandatory snap-x my-auto ">
-        {faqs.map((faq, index) => (
-          <Faqtemplate key={index} faq={faq} />
-        ))}
+      <div className="flex flex-col md:flex-row max-w-[100vw] mt-[80px]  ">
+        <div className="  flex-1 md:mt-auto">
+          <div className="flex  ">
+            <div className="rotate-90 md:rotate-0">
+              <Arrowicon />
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-[40px]">
+          {faqs.map((faq, index) => (
+            <Faqtemplate key={index} faq={faq} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -27,9 +27,6 @@ const Home = (props: Props) => {
           <Products />
         </section>
         <section className="">
-          <GridMat />
-        </section>
-        <section className="">
           <Testimonials />
         </section>
         <section className="">

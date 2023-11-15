@@ -15,5 +15,8 @@ export default {
       euclid600: ["euclid600", "sans"],
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwind-scrollbar-hide"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
 };

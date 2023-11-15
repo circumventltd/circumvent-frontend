@@ -34,7 +34,7 @@
   font-family: euclid;
   font-size: 24px;
   font-style: normal;
-  line-height: 56px; /* 116.667% */
+  line-height: 32px; /* 116.667% */
 }
 
 .menulink li:hover::after {
@@ -63,27 +63,23 @@
 /* GridMat Component */
 .lets-talk {
   background: #0030ff;
-  width: 27rem;
-  height: 27rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.lets-talk h3 {
-  font-size: 4rem;
-}
+
 .grid-mat-section .grid-container {
   position: relative;
   margin: 0 auto;
   display: grid;
   max-width: auto;
   grid-template-columns: repeat(9, 1fr);
+  border: 0.02px solid rgba(128, 128, 128, 0.5);
 }
 .grid-mat-section .grid-item {
   height: 8rem;
@@ -146,13 +142,7 @@
 /* sm size */
 @media screen and (max-width: 640px) {
   /* GridMat Component */
-  .lets-talk {
-    width: 13rem;
-    height: 13rem;
-  }
-  .lets-talk h3 {
-    font-size: 3rem;
-  }
+
   .grid-mat-section .grid-item {
     height: 3rem;
   }
@@ -192,26 +182,18 @@
   }
 }
 /* md */
-@media screen and (max-width: 768px) {
-  .lets-talk {
-    width: 16rem;
-    height: 16rem;
-  }
-  .lets-talk h3 {
-    font-size: 3rem;
-  }
-
+@media screen and (min-width: 768px) {
   .menulink {
     color: rgba(0, 9, 51, 0.4);
     font-family: euclid;
-    font-size: 48px;
+    font-size: 38px;
     font-style: normal;
     line-height: 56px; /* 116.667% */
   }
   .menulink li:hover {
     color: #0030ff;
     font-family: euclid;
-    font-size: 48px;
+    font-size: 38px;
     font-style: normal;
     line-height: 56px; /* 116.667% */
   }
@@ -221,14 +203,14 @@
   .menulink {
     color: rgba(0, 9, 51, 0.4);
     font-family: euclid;
-    font-size: 70px;
+    font-size: 40px;
     font-style: normal;
     line-height: 64px;
   }
   .menulink li:hover {
     color: #0030ff;
     font-family: euclid;
-    font-size: 70px;
+    font-size: 40px;
     font-style: normal;
     line-height: 64px;
   }

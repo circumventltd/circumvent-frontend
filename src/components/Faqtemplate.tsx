@@ -1,5 +1,5 @@
-import React from "react";
-import Arrowicon from "./svgs/Arrowicon";
+import React, { useState } from "react";
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 interface IFaqs {
   faq: {
@@ -10,27 +10,41 @@ interface IFaqs {
 
 const Faqtemplate = ({ faq }: IFaqs) => {
   const { question, answer } = faq;
+  const [showAnswer, setShowAnswer] = useState<Boolean>(false);
+  const handleshowfaqAnswer = () => {
+    setShowAnswer((prevShowAnswer) => {
+      const newShowAnswer = !prevShowAnswer;
+      return newShowAnswer;
+    });
+  };
 
   return (
-    <div className="flex min-w-full mt-auto pl-1 snap-start flex-col lg:flex-row justify-between gap-[24px]">
-      <div className="mt-[80px] lg:mt-auto">
-        <div className="flex">
-          <div className="-rotate-180">
-            <Arrowicon />
-          </div>
-          <div>
-            <Arrowicon />
-          </div>
+    <div className="w-full  lg:max-w-[480px]">
+      <div className="flex justify-between border-b border-b-[#00093329] pb-[24px] gap-[8px]">
+        <h2 className="text-[#000933] text-[24px] font-euclid500 leading-[32px]">
+          {question}
+        </h2>
+        <div className="min-w-[24px] flex justify-center">
+          {!showAnswer ? (
+            <AiOutlinePlus
+              onClick={handleshowfaqAnswer}
+              className="text-[24px]  text-[#343330] cursor-pointer"
+            />
+          ) : (
+            <AiOutlineMinus
+              onClick={handleshowfaqAnswer}
+              className="text-[24px]  text-[#343330] cursor-pointer"
+            />
+          )}
         </div>
       </div>
-      <div className="w-full lg:max-w-[480px]">
-        <div>
-          <h2 className="text-[#000933] text-[24px] font-euclid500 leading-[32px]">
-            {question}
-          </h2>
-          <h2></h2>
-        </div>
-        <p className="font-euclid leading-[24px] text-[#000933a3] pr-2 mt-[40px]">
+      <div
+        className={`overflow-hidden transition-max-h duration-500`}
+        style={{
+          maxHeight: showAnswer ? "300px" : "0",
+        }}
+      >
+        <p className="font-euclid  leading-[24px] text-[#000933a3] pr-2 mt-[40px]">
           {answer}
         </p>
       </div>

@@ -6,8 +6,8 @@ const GridMat = () => {
   return (
     <section className="grid-mat-section">
       <div className="grid-container">
-        <div className="lets-talk">
-          <h3 style={{ fontFamily: "Euclid Galactic", color: "white" }}>
+        <div className="lets-talk z-40 h-[12rem] w-[12rem] md:h-[17rem] md:w-[17rem]">
+          <h3 className="font-euclid text-[48px] md:text-[72px] text-center text-white">
             Let's talk
           </h3>
         </div>

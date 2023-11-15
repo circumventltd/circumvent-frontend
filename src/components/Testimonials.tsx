@@ -16,7 +16,7 @@ const Testimonials = (props: Props) => {
       <h1 className="font-euclid text-[48px] lg:text-[72px] leading-[56px] lg:leading-[80px] text-headertext">
         Testimonials
       </h1>
-      <div className="flex max-w-[100vw] overflow-x-scroll snap-mandatory snap-x my-auto ">
+      <div className="flex scrollbar-h-[6px] scrollbar scrollbar-thumb-slate-300 max-w-[100vw] overflow-x-scroll snap-mandatory snap-x my-auto ">
         {testimonialData.map((testimonial, index) => (
           <TestimonialsTemplate key={index} testimonial={testimonial} />
         ))}
