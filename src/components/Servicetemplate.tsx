@@ -30,7 +30,7 @@ const Servicetemplate = ({
   return (
     <div
       style={{ backgroundColor: color }}
-      className={`min-w-[100vw] snap-start h-full py-[30px]  relative`}
+      className={`min-w-[100vw] snap-start min-h-full py-[30px] pb-6 relative`}
     >
       <div className="bg-white mix-blend-overlay rounded-[400px] blur-[200px] w-[400px] h-[400px] absolute top-0 right-0"></div>
       {/* content */}
@@ -77,12 +77,12 @@ const Servicetemplate = ({
           </div>
         </div>
         <div className="flex flex-col lg:flex-row items-start  gap-[24px] lg:items-center justify-between mt-auto">
-          <div className="mt-auto rotate-0 lg:-rotate-90">
-            {/* <Arrowicon arrowcolor={arrowcolor} /> */}
-            <HiArrowDown
+          <div className="mt-auto lg:rotate-0 rotate-90">
+            <Arrowicon color={arrowcolor} />
+            {/* <HiArrowDown
               style={{ color: arrowcolor }}
               className={`text-[50px]`}
-            />
+            /> */}
           </div>
           <div className="flex flex-col gap-[40px] max-w-[480px]">
             <div

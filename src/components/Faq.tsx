@@ -21,7 +21,7 @@ const Faq = (props: Props) => {
         <div className="  flex-1 md:mt-auto">
           <div className="flex  ">
             <div className="rotate-90 md:rotate-0">
-              <Arrowicon />
+              <Arrowicon color={"#0030FF"} />
             </div>
           </div>
         </div>

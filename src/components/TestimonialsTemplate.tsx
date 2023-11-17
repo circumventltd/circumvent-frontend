@@ -16,10 +16,10 @@ const TestimonialsTemplate = ({ testimonial }: ITestiomial) => {
       <div className="mt-[80px] lg:mt-auto">
         <div className="flex">
           <div className="-rotate-180">
-            <Arrowicon />
+            <Arrowicon color={"#0030FF"} />
           </div>
           <div>
-            <Arrowicon />
+            <Arrowicon color={"#0030FF"} />
           </div>
         </div>
       </div>

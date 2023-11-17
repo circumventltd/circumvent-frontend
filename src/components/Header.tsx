@@ -10,7 +10,6 @@ import { RootState } from "../utils/redux/reducers";
 import { togglescreen, togglesidebar } from "../utils/redux/slices/menumodals";
 
 const Header = () => {
-  // const [showsidebar, setShowsidebar] = useState(false);
   const screen = useSelector(
     (state: RootState) => state.menuslice.screentoshow
   );
@@ -35,6 +34,7 @@ const Header = () => {
 
   const hidemenu = () => {
     dispatch(togglesidebar(false));
+    dispatch(togglescreen("home"));
   };
 
   const showmenu = () => {
@@ -106,7 +106,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="bg-[url('/img1-min.jpg')] w-full h-[400px] lg:h-[600px] bg-cover relative">
+      <div className="bg-[url('/img1-min.jpg')] w-full h-[30%] bg-cover relative">
         <div className="absolute top-[30px] lg:top-[50px] w-full  left-0  px-[24px] lg:px-[80px]">
           <div className="bg-white flex justify-between items-center px-[40px] py-[24px]">
             <div className="flex items-center gap-[6px]">

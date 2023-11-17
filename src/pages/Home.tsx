@@ -14,12 +14,11 @@ const Home = (props: Props) => {
   return (
     <div>
       <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
-        <section className="">
+        <section className="flex flex-col h-[100vh]">
           <Header />
-        </section>
-        <section className=" ">
           <Hero />
         </section>
+        <section className=" "></section>
         <section className="">
           <Service />
         </section>
@@ -32,7 +31,6 @@ const Home = (props: Props) => {
         <section className="">
           <Faq />
         </section>
-        {/* <Sidemenu /> */}
         <section className="">
           <Footer />
         </section>

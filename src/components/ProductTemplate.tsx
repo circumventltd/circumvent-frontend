@@ -19,7 +19,7 @@ const ProductTemplate = (props: Props) => {
       </div>
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-[24px]">
         <div className="rotate-90 lg:rotate-0">
-          <Arrowicon />
+          <Arrowicon color={"#0030FF"} />
         </div>
         <p className="font-euclid leading-[24px] text-[16px] text-[#000933a3] w-full lg:max-w-[480px]">
           Your reliable partner in modernizing the care industry. Explore
