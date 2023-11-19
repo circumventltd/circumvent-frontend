@@ -1,6 +1,5 @@
 import React from "react";
 import { BiArrowBack } from "react-icons/bi";
-import CalendlyEmbed from "./CalendlyEmbed";
 import { InlineWidget } from "react-calendly";
 
 type Props = {

@@ -30,7 +30,7 @@ const Servicetemplate = ({
   return (
     <div
       style={{ backgroundColor: color }}
-      className={`min-w-[100vw] snap-start min-h-full py-[30px] pb-6 relative`}
+      className={`min-w-[100vw] snap-start min-h-full pb-[30px] pt-[10px] relative`}
     >
       <div className="bg-white mix-blend-overlay rounded-[400px] blur-[200px] w-[400px] h-[400px] absolute top-0 right-0"></div>
       {/* content */}

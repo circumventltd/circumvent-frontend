@@ -27,7 +27,7 @@ const Hero = (props: Props) => {
         <img src="/hand.svg" className="h-full" />
       </div>
       <div className="absolute flex justify-between flex-col p-[24px] lg:p-[80px] gap-5  h-full  top-0 w-full">
-        <h2 className="font-euclid text-white text-[48px] md:text-[40px]  leading-[56px] max-w-[382px] lg:max-w-[640px]">
+        <h2 className="font-euclid text-white text-[30px] md:text-[40px]  leading-[56px] max-w-[382px] lg:max-w-[640px]">
           Empower your business with customized IT solutions
         </h2>
         <div className="flex flex-col mt-auto lg:flex-row items-start justify-between">
