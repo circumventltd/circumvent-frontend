@@ -13,7 +13,7 @@ type Props = {};
 const Home = (props: Props) => {
   return (
     <div>
-      <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
+      <div className="overflow-y-scroll snap-y snap-mandatory">
         <section className="flex flex-col h-[100vh]">
           <Header />
           <Hero />

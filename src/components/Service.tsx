@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import Servicetemplate from "./Servicetemplate";
 
 type Props = {};
@@ -78,8 +78,71 @@ const servicesdata = [
 ];
 
 const Service = (props: Props) => {
+  const parentRef = useRef<HTMLDivElement>(null);
+  // React.useEffect(() => {
+  //   // const handleScroll = () => {
+  //   //   if (parentRef.current) {
+  //   //     const rect = parentRef.current.getBoundingClientRect();
+  //   //     const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+  //   //     if (isVisible) {
+  //   //       // alert("Element is visible in the viewport");
+  //   //       const scrollPosition = window.scrollY;
+  //   //       console.log("Scroll Position:", scrollPosition);
+  //   //       console.log("Top:", rect.top);
+  //   //       console.log("Bottom:", rect.bottom);
+  //   //     } else {
+  //   //       // alert("not visible");
+  //   //     }
+  //   //   }
+
+  //   //   // Do something with the scroll position
+  //   // };
+
+  //   // const handleScroll = () => {
+  //   //   if (parentRef.current) {
+  //   //     const parentRect = parentRef.current.getBoundingClientRect();
+  //   //     const scrollPercentage =
+  //   //       (window.scrollY - parentRect.top) / parentRect.height;
+
+  //   //     // Assuming you have 5 child divs, you can calculate the index of the visible child
+  //   //     const visibleChildIndex = Math.floor(scrollPercentage * 5);
+  //   //     const offset = (100 / 5) * visibleChildIndex;
+
+  //   //     // Apply the transform to the parent div
+  //   //     parentRef.current.style.transform = `translateX(-${offset}%)`;
+  //   //   }
+  //   // };
+
+  //   // const handleScroll = () => {
+  //   //   if (parentRef.current) {
+  //   //     const parentRect = parentRef.current.getBoundingClientRect();
+  //   //     const scrollPercentage =
+  //   //       (window.scrollY - parentRect.top) / parentRect.height;
+
+  //   //     const totalChildren = servicesdata.length; // Update with your actual data
+  //   //     const childWidthPercentage = 100 / totalChildren;
+
+  //   //     const visibleChildIndex = Math.floor(scrollPercentage * totalChildren);
+  //   //     const offset = childWidthPercentage * visibleChildIndex;
+
+  //   //     parentRef.current.style.transform = `translateX(-100%)`;
+  //   //   }
+  //   // };
+
+  //   // Attach the event listener when the component mounts
+  //   window.addEventListener("scroll", handleScroll, true);
+
+  //   // Remove the event listener when the component unmounts
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll, true);
+  //   };
+  // }, []);
   return (
-    <div className="scrollbar-h-[6px] scrollbar scrollbar-thumb-slate-300 max-w-screen h-[100vh] flex snap-mandatory snap-x overflow-y-hidden  overflow-x-scroll">
+    <div
+      ref={parentRef}
+      className="scrollbar-h-[6px] scrollbar scrollbar-thumb-slate-300 max-w-screen h-[100vh] flex snap-mandatory snap-x overflow-y-hidden  overflow-x-scroll"
+    >
       {servicesdata.map((item, index) => (
         <Servicetemplate
           key={index}

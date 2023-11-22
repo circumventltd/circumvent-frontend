@@ -106,7 +106,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="bg-[url('/img1-min.jpg')] w-full h-[20%] bg-cover relative">
+      <div className="bg-[url('/img1-min.jpg')] w-full h-[35%] bg-cover relative">
         <div className="absolute top-[30px] lg:top-[50px] w-full  left-0  px-[24px] lg:px-[80px]">
           <div className="bg-white flex justify-between items-center px-[40px] py-[24px]">
             <div className="flex items-center gap-[6px]">

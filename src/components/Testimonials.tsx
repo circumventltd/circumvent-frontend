@@ -6,7 +6,7 @@ type Props = {};
 
 const Testimonials = (props: Props) => {
   return (
-    <div className="p-[24px] lg:p-[80px] min-h-[100vh] flex flex-col flex-1">
+    <div className="p-[24px] lg:p-[40px] flex flex-col flex-1">
       <div className="flex gap-[24px] items-center mb-[40px]">
         <h2 className="font-euclid600 leading-[24px] tracking-[4px] whitespace-nowrap text-[#00093366]">
           WHAT OUR CLIENTS SAY

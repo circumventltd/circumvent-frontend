@@ -22,9 +22,9 @@ const Hero = (props: Props) => {
     dispatch(togglescreen("bookacall"));
   };
   return (
-    <div className="bg-[#000933] h-[80%]  relative">
+    <div className="bg-[#000933] h-[65%]  relative">
       <div className="absolute top-0 h-full w-full">
-        <img src="/hand.svg" className="h-full" />
+        <img src="/hand.svg" className="h-full w-full" />
       </div>
       <div className="absolute flex justify-between flex-col p-[24px] lg:p-[80px] gap-5  h-full  top-0 w-full">
         <h2 className="font-euclid text-white text-3xl md:text-[40px]  md:leading-[56px] max-w-[382px] lg:max-w-[640px]">
@@ -44,13 +44,13 @@ const Hero = (props: Props) => {
                 needs and drive your business forward.
               </p>
             </div>
-            <div className="flex flex-col lg:flex-row gap-[24px] lg:text-[28px]">
-              <button className=" py-[20px] px-[28px]  border border-white text-white font-euclid500">
+            <div className="flex flex-col lg:flex-row gap-[24px] ">
+              <button className=" py-[10px] px-[18px]  border border-white text-white font-euclid500">
                 Learn more
               </button>
               <button
                 onClick={handleBookACall}
-                className="py-[20px] px-[28px] bg-white text-primary font-euclid500 "
+                className="py-[10px] px-[18px] bg-white text-primary font-euclid500 "
               >
                 Book a call
               </button>
