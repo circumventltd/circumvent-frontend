@@ -1,33 +1,41 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const CalendlyEmbed = () => {
   useEffect(() => {
-    // Load Calendly script
+    // Calendly script has to be loaded after the component mounts
     const script = document.createElement("script");
     script.type = "text/javascript";
     script.src = "https://assets.calendly.com/assets/external/widget.js";
     script.async = true;
+
     document.body.appendChild(script);
 
-    // Initialize Calendly inline widget
-    // @ts-ignore
-    script.onload = () => {
-      // @ts-ignore
-      if (window.Calendly) {
-        // @ts-ignore
-        window.Calendly.initInlineWidget({
-          url: "https://calendly.com/geepytechnologies/30min", // Replace with your Calendly link
-        });
-      }
-    };
-
-    // Cleanup script on component unmount
     return () => {
+      // Cleanup: remove the Calendly script when the component unmounts
       document.body.removeChild(script);
     };
   }, []);
 
-  return <div className="calendly-inline-widget" data-auto-load="false"></div>;
+  return (
+    <div>
+      {/* Embed Calendly inline widget */}
+      <div
+        className="calendly-inline-widget"
+        data-url="https://calendly.com/circumvent/30min?text_color=0b0b0b"
+        style={{ minWidth: "320px", height: "1000px" }}
+      />
+
+      {/* Helmet to inject script into the head */}
+      <Helmet>
+        <script
+          type="text/javascript"
+          src="https://assets.calendly.com/assets/external/widget.js"
+          async
+        />
+      </Helmet>
+    </div>
+  );
 };
 
 export default CalendlyEmbed;

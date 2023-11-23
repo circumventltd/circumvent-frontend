@@ -20,7 +20,7 @@ const Faqtemplate = ({ faq }: IFaqs) => {
 
   return (
     <div className="w-full  lg:max-w-[480px]">
-      <div className="flex justify-between border-b border-b-[#00093329] pb-[24px] gap-[8px]">
+      <div className="flex justify-between min-h-[150px] border-b border-b-[#00093329] pb-[24px] gap-[8px]">
         <h2 className="text-[#000933] text-[24px] font-euclid leading-[32px]">
           {question}
         </h2>

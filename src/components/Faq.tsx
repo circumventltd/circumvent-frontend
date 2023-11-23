@@ -18,14 +18,7 @@ const Faq = (props: Props) => {
         Frequently Asked Questions
       </h1>
       <div className="flex flex-col md:flex-row max-w-[100vw] mt-[80px]  ">
-        <div className="  flex-1 md:mt-auto">
-          <div className="flex  ">
-            <div className="rotate-90 md:rotate-0">
-              <Arrowicon color={"#0030FF"} />
-            </div>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px]">
           {faqs.map((faq, index) => (
             <Faqtemplate key={index} faq={faq} />
           ))}

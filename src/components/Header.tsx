@@ -46,7 +46,7 @@ const Header = () => {
   };
   const Menu = () => {
     return (
-      <div className="p-[24px] md:p-[80px] lg:py-[40px] flex flex-col h-full">
+      <div className="p-[24px] md:p-[80px] lg:py-[40px] flex flex-col h-[30%]">
         <div className="flex flex-col md:gap-[10px]">
           <menu className="flex justify-between">
             <h2 className="font-euclid600 leading-[24px] lg:text-[24px] tracking-[4px]">
@@ -76,9 +76,11 @@ const Header = () => {
             </span>
           </div>
           <div className="flex flex-col">
-            <span className="contact-text text-base">Address (Line 1)</span>
-            <span className="contact-text text-base">Address (Line 2)</span>
-            <span className="contact-text text-base">City, state</span>
+            <span className="contact-text text-base">
+              17 Leather Gardens, Newham, E15 3LD
+            </span>
+            {/* <span className="contact-text text-base">Address (Line 2)</span> */}
+            <span className="contact-text text-base">United Kingdom</span>
           </div>
         </div>
       </div>
@@ -131,7 +133,7 @@ const Header = () => {
               onClick={hidemenu}
               className={`${
                 showsidebar && widthSize >= 640
-                  ? "bg-white mt-[30px] lg:mt-[50px] mr-[5rem] ml-[1rem] closeshadow rounded-full p-[24px] h-[72px] w-[72px] "
+                  ? "bg-white mt-[30px] cursor-pointer lg:mt-[50px] mr-[5rem] ml-[1rem] closeshadow rounded-full p-[24px] h-[72px] w-[72px] "
                   : " hidden "
               }`}
             >

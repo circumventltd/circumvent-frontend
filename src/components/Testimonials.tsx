@@ -9,27 +9,29 @@ const Testimonials = (props: Props) => {
   const myref = useRef<HTMLDivElement>(null);
 
   const handleArrow = (direction: string) => {
-    if (direction === "left") {
-      setIndex(index !== 0 ? index - 1 : testimonialData.length - 1);
-    }
-    if (direction === "right") {
-      setIndex(index !== testimonialData.length - 1 ? index + 1 : 0);
-    }
+    setIndex((prevIndex) => {
+      if (direction === "left") {
+        return prevIndex !== 0 ? prevIndex - 1 : testimonialData.length - 1;
+      }
+      if (direction === "right") {
+        return prevIndex !== testimonialData.length - 1 ? prevIndex + 1 : 0;
+      }
+
+      return prevIndex;
+    });
   };
-
+  const myFunction = () => {
+    handleArrow("right");
+  };
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      handleArrow("right");
-    }, 10000);
+    const intervalId = setInterval(myFunction, 3000);
 
-    return () => {
-      clearTimeout(timeoutId);
-    };
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <div>
-      <div className="p-[24px] lg:p-[40px] flex flex-col flex-1">
+    <div className=" overflow-hidden">
+      <div className="p-[24px] lg:p-[40px]  flex flex-col">
         <div className="flex gap-[24px] items-center mb-[40px]">
           <h2 className="font-euclid600 leading-[24px] tracking-[4px] whitespace-nowrap text-[#00093366]">
             WHAT OUR CLIENTS SAY
@@ -46,7 +48,7 @@ const Testimonials = (props: Props) => {
           width: `${testimonialData.length * 100}vw`,
           transform: `translateX(${-100 * index}vw)`,
         }}
-        className={`flex scrollbar-h-[6px] scrollbar scrollbar-thumb-slate-300 snap-mandatory snap-x my-auto `}
+        className={`flex `}
       >
         {testimonialData.map((testimonial, index) => (
           <TestimonialsTemplate

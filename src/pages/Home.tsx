@@ -12,29 +12,24 @@ type Props = {};
 
 const Home = (props: Props) => {
   return (
-    <div>
-      <div className="overflow-y-scroll snap-y snap-mandatory">
-        <section className="flex flex-col h-[100vh]">
-          <Header />
-          <Hero />
-        </section>
-        <section className=" "></section>
-        <section className="">
-          <Service />
-        </section>
-        <section className="">
-          <Products />
-        </section>
-        <section className="">
-          <Testimonials />
-        </section>
-        <section className="">
-          <Faq />
-        </section>
-        <section className="">
-          <Footer />
-        </section>
-      </div>
+    <div className="relative">
+      <section className="h-screen ">
+        <Header />
+        <Hero />
+      </section>
+      <Service />
+      <section className="">
+        <Products />
+      </section>
+      <section className="">
+        <Testimonials />
+      </section>
+      <section className="">
+        <Faq />
+      </section>
+      <section className="">
+        <Footer />
+      </section>
     </div>
   );
 };
