@@ -3,6 +3,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import Arrowicon from "./svgs/Arrowicon";
 import { useDispatch } from "react-redux";
 import { togglescreen, togglesidebar } from "../utils/redux/slices/menumodals";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 type Props = {};
 
@@ -15,6 +16,11 @@ const Hero = (props: Props) => {
       behavior: "smooth",
     });
   }
+  const [text, count] = useTypewriter({
+    words: ["web", "software", "mobile", "network", "cloud", "AI"],
+    loop: true,
+    delaySpeed: 2000,
+  });
 
   const handleBookACall = () => {
     scrollToTop();
@@ -28,7 +34,8 @@ const Hero = (props: Props) => {
       </div>
       <div className="absolute flex justify-between flex-col p-[24px] lg:p-[80px] gap-5  h-full  top-0 w-full">
         <h2 className="font-euclid text-white text-3xl md:text-[40px]  md:leading-[56px] max-w-[382px] lg:max-w-[640px]">
-          Empower your business with customized IT solutions
+          Empower your business with customized <span className="">{text}</span>{" "}
+          solutions
         </h2>
         <div className="flex flex-col mt-auto lg:flex-row items-start justify-between">
           <div className="mt-auto rotate-90 lg:rotate-0 mb-[24px]">

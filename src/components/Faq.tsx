@@ -25,7 +25,7 @@ const Faq = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-[40px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px]">
           {faqs.map((faq, index) => (
             <Faqtemplate key={index} faq={faq} />
           ))}

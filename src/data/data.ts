@@ -6,19 +6,19 @@ export const testimonialData = [
       " Circumvent has been an invaluable partner in our journey to digital transformation. Their software development expertise coupled with their innovative approach, has consistently delivered top-notch solutions for our business. Their ability to understand our unique requirements and turn them into scalable, efficient software has greatly contributed to our success.",
   },
   {
-    name: "Chinda Christine",
+    name: "Chidi 2",
     title: "Startup Founder",
     comment:
       "Partnering with Circumvent was a game-changer for my startup. Their talented team of developers helped turn my vision into reality. They not only delivered a high-quality product but also provided valuable insights and suggestions throughout the development process.Circumvent is the go-to choice for any entrepreneur looking to bring their ideas to life.",
   },
   {
-    name: "Chidi Okpara",
+    name: "Chidi 3",
     title: "CEO, Bridlyn Accountancy",
     comment:
       " Circumvent has been an invaluable partner in our journey to digital transformation. Their software development expertise coupled with their innovative approach, has consistently delivered top-notch solutions for our business. Their ability to understand our unique requirements and turn them into scalable, efficient software has greatly contributed to our success.",
   },
   {
-    name: "Chidi Okpara",
+    name: "Chidi 4",
     title: "CEO, Bridlyn Accountancy",
     comment:
       " Circumvent has been an invaluable partner in our journey to digital transformation. Their software development expertise coupled with their innovative approach, has consistently delivered top-notch solutions for our business. Their ability to understand our unique requirements and turn them into scalable, efficient software has greatly contributed to our success.",

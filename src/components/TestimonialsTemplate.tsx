@@ -7,18 +7,25 @@ interface ITestiomial {
     title: String;
     comment: String;
   };
+  handleArrow: (direction: string) => void;
 }
 
-const TestimonialsTemplate = ({ testimonial }: ITestiomial) => {
+const TestimonialsTemplate = ({ testimonial, handleArrow }: ITestiomial) => {
   const { name, title, comment } = testimonial;
+  const handleLeftClick = () => {
+    handleArrow("left");
+  };
+  const handleRightClick = () => {
+    handleArrow("left");
+  };
   return (
-    <div className="flex min-w-full mt-auto pl-1 snap-start flex-col lg:flex-row justify-between gap-[24px]">
+    <div className="flex w-screen mt-auto snap-start flex-col lg:flex-row  justify-around gap-[24px]">
       <div className="mt-[80px] lg:mt-auto">
-        <div className="flex">
-          <div className="-rotate-180">
+        <div className="flex flex-row">
+          <div onClick={handleLeftClick} className="-rotate-180 cursor-pointer">
             <Arrowicon color={"#0030FF"} />
           </div>
-          <div>
+          <div onClick={handleRightClick} className="cursor-pointer">
             <Arrowicon color={"#0030FF"} />
           </div>
         </div>
