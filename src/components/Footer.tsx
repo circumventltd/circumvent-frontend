@@ -46,8 +46,8 @@ const Footer = (props: Props) => {
             CONTACT US
           </p>
           <ul className="font-euclid text-[#000933] leading-[24px]">
-            <li>+44(730) 525 7707</li>
-            <li>+44(730) 633 8999</li>
+            <li>+44 730 525 7707</li>
+            <li>+44 730 633 8999</li>
             <li>admin@circumventltd.co.uk</li>
           </ul>
         </div>

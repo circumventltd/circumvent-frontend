@@ -6,22 +6,22 @@ export const testimonialData = [
       " Circumvent has been an invaluable partner in our journey to digital transformation. Their software development expertise coupled with their innovative approach, has consistently delivered top-notch solutions for our business. Their ability to understand our unique requirements and turn them into scalable, efficient software has greatly contributed to our success.",
   },
   {
-    name: "Chidi 2",
+    name: "Chinda Christine",
     title: "Startup Founder",
     comment:
       "Partnering with Circumvent was a game-changer for my startup. Their talented team of developers helped turn my vision into reality. They not only delivered a high-quality product but also provided valuable insights and suggestions throughout the development process.Circumvent is the go-to choice for any entrepreneur looking to bring their ideas to life.",
   },
   {
-    name: "Chidi 3",
-    title: "CEO, Bridlyn Accountancy",
+    name: "Wondy H",
+    title: "IT Director, Redrock Finance",
     comment:
-      " Circumvent has been an invaluable partner in our journey to digital transformation. Their software development expertise coupled with their innovative approach, has consistently delivered top-notch solutions for our business. Their ability to understand our unique requirements and turn them into scalable, efficient software has greatly contributed to our success.",
+      " Circumvent has been instrumental in streamlining our IT operations. Their custom software solutions have optimized our workflow, saving us time and resources. Their commitment to quality and reliability is unmatched. We rely on Circumvent for all our software development needs, and they consistently exceed our expectations.",
   },
   {
-    name: "Chidi 4",
-    title: "CEO, Bridlyn Accountancy",
+    name: "Marshall O",
+    title: "Fyndah Real Estate",
     comment:
-      " Circumvent has been an invaluable partner in our journey to digital transformation. Their software development expertise coupled with their innovative approach, has consistently delivered top-notch solutions for our business. Their ability to understand our unique requirements and turn them into scalable, efficient software has greatly contributed to our success.",
+      "Circumvent's real estate solutions have revolutionized our online business. They have significantly improved the real estate experience for our customers. With Circumvent, we have seen a substantial increase in sales and customer satisfaction. They are an essential partner in our growth strategy.",
   },
 ];
 

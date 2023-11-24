@@ -1,5 +1,6 @@
 import React from "react";
 import Arrowicon from "./svgs/Arrowicon";
+import { motion } from "framer-motion";
 
 interface ITestiomial {
   testimonial: {
@@ -19,7 +20,12 @@ const TestimonialsTemplate = ({ testimonial, handleArrow }: ITestiomial) => {
     handleArrow("right");
   };
   return (
-    <div className="flex w-screen px-7 md:pl-0  mt-auto snap-start flex-col lg:flex-row justify-between ">
+    <motion.div
+      initial={{ opacity: 0.6, y: -30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="flex w-screen px-7 md:pl-0  mt-auto snap-start flex-col lg:flex-row justify-between "
+    >
       <div className="mt-[80px] lg:mt-auto pl-2 gap-3">
         <div className="flex flex-row gap-4">
           <div onClick={handleLeftClick} className="-rotate-180 cursor-pointer">
@@ -43,7 +49,7 @@ const TestimonialsTemplate = ({ testimonial, handleArrow }: ITestiomial) => {
           {comment}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

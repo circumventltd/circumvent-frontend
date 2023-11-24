@@ -69,18 +69,18 @@ const Header = () => {
         </div>
         <div className="mt-auto flex flex-col md:flex-row gap-[24px] md:items-center md:justify-between lg:text-[30px] leading-[24px] lg:leading-[44px]">
           <div className="flex flex-col">
-            <span className="contact-text text-base">+44(730) 525 7707</span>
-            <span className="contact-text text-base">+44(730) 633 8999</span>
+            <span className="contact-text text-base">+44 730 525 7707</span>
+            <span className="contact-text text-base">+44 730 633 8999</span>
             <span className="contact-text text-base">
               admin@circumventltd.co.uk
             </span>
           </div>
           <div className="flex flex-col">
             <span className="contact-text text-base">
-              17 Leather Gardens, Newham, E15 3LD
+              17 Leather Gardens, Newham, London, United Kingdom, E15 3LD
             </span>
             {/* <span className="contact-text text-base">Address (Line 2)</span> */}
-            <span className="contact-text text-base">United Kingdom</span>
+            {/* <span className="contact-text text-base">United Kingdom</span> */}
           </div>
         </div>
       </div>
