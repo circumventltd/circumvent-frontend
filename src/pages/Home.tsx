@@ -17,8 +17,10 @@ const Home = (props: Props) => {
         <Header />
         <Hero />
       </section>
-      <Service />
-      <section className="">
+      <section id="services">
+        <Service />
+      </section>
+      <section id="products" className="">
         <Products />
       </section>
       <section className="">
@@ -27,7 +29,7 @@ const Home = (props: Props) => {
       <section className="">
         <Faq />
       </section>
-      <section className="">
+      <section id="">
         <Footer />
       </section>
     </div>

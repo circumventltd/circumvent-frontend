@@ -22,7 +22,7 @@ body {
   font-style: normal;
   line-height: 32px; /* 133.333% */
 }
-.menulink li::after {
+.menulink a::after {
   content: "";
   display: block;
   width: 100%;
@@ -33,7 +33,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.menulink li:hover {
+.menulink a:hover {
   color: #0030ff;
   font-family: euclid;
   font-size: 24px;
@@ -41,7 +41,7 @@ body {
   line-height: 32px; /* 116.667% */
 }
 
-.menulink li:hover::after {
+.menulink a:hover::after {
   transform: scaleX(1); /* Show the line for active items */
 }
 
@@ -194,7 +194,7 @@ body {
     font-style: normal;
     line-height: 56px; /* 116.667% */
   }
-  .menulink li:hover {
+  .menulink a:hover {
     color: #0030ff;
     font-family: euclid;
     font-size: 38px;
@@ -211,7 +211,7 @@ body {
     font-style: normal;
     line-height: 64px;
   }
-  .menulink li:hover {
+  .menulink a:hover {
     color: #0030ff;
     font-family: euclid;
     font-size: 40px;

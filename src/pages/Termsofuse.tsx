@@ -9,8 +9,8 @@ export const Termsofuse = () => {
     <Policylayout>
       <div className="flex flex-col w-full items-center">
         <div className="w-[95%] md:w-[90%] lg:w-[80%]">
-          <div className="flex gap-[30px] md:gap-[40px] lg:gap-[80px] my-[80px]">
-            <div className="font-euclid flex flex-col mt-[216px] text-[#000933] min-w-[100px] md:min-w-[200px] gap-[8px] leading-[24px]">
+          <div className="flex justify-center  gap-[30px] md:gap-[40px] lg:gap-[80px] my-[80px]">
+            <div className="font-euclid hidden md:flex flex-col mt-[216px] text-[#000933] min-w-[100px] md:min-w-[200px] gap-[8px] leading-[24px]">
               <Link
                 to="/legal/terms-of-use"
                 className="text-[#000933] font-euclid500"

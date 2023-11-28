@@ -273,7 +273,7 @@ const Service = (props: Props) => {
       ) : (
         <div
           ref={parentRef}
-          className="scrollbar-h-[6px] scrollbar scrollbar-thumb-slate-300 bg-[#000933] max-w-screen h-[100vh] flex snap-mandatory sticky snap-x z-[999] top-0  overflow-hidden"
+          className="scrollbar-h-[6px] scrollbar scrollbar-thumb-slate-300 bg-[#000933] max-w-screen h-[100vh] flex snap-mandatory sticky snap-x z-[666] top-0  overflow-hidden"
         >
           <motion.div>{slidercomponent}</motion.div>
         </div>
