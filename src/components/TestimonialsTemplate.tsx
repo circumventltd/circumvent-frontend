@@ -26,7 +26,7 @@ const TestimonialsTemplate = ({ testimonial, handleArrow }: ITestiomial) => {
       transition={{ duration: 0.5 }}
       className="flex w-screen px-7 md:pl-0  mt-auto snap-start flex-col lg:flex-row justify-between "
     >
-      <div className="mt-[80px] lg:mt-auto pl-2 gap-3">
+      <div className="lg:mt-auto md:pl-9 gap-3">
         <div className="flex flex-row gap-4">
           <div onClick={handleLeftClick} className="-rotate-180 cursor-pointer">
             <Arrowicon color={"#0030FF"} />

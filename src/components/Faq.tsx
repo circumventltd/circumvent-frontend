@@ -7,8 +7,8 @@ type Props = {};
 
 const Faq = (props: Props) => {
   return (
-    <div className="p-[24px] lg:p-[40px] min-h-[100vh] flex flex-col flex-1">
-      <div className="flex gap-[24px] items-center mb-[40px]">
+    <div className="p-[24px] mt-[60px] lg:p-[40px] min-h-[100vh] flex flex-col flex-1">
+      <div className="flex gap-[24px] items-center mb-[20px]">
         <h2 className="font-euclid600 leading-[24px] tracking-[4px] whitespace-nowrap text-[#00093366]">
           FAQS
         </h2>

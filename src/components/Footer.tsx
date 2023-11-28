@@ -1,5 +1,6 @@
 import React from "react";
 import GridMat from "./GridMat";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -35,10 +36,10 @@ const Footer = (props: Props) => {
         </div>
         <div className="flex flex-col gap-[24px]">
           <p className="font-euclid600 text-[#0030FF] tracking-[4px]">MORE</p>
-          <ul className="font-euclid text-[#000933] leading-[24px]">
-            <li>Terms of Service</li>
-            <li>Cookie Policy</li>
-            <li>Privacy Policy</li>
+          <ul className="font-euclid flex flex-col text-[#000933] gap-[2px] leading-[24px]">
+            <Link to="/legal/terms-of-use">Terms of Service</Link>
+            <Link to="/legal/cookie-policy">Cookie Policy</Link>
+            <Link to="/legal/privacy-policy">Privacy Policy</Link>
           </ul>
         </div>
         <div className="flex flex-col gap-[24px]">

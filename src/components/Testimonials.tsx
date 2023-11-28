@@ -32,7 +32,7 @@ const Testimonials = (props: Props) => {
   return (
     <div className=" overflow-hidden">
       <div className="p-[24px] lg:p-[40px]  flex flex-col">
-        <div className="flex gap-[24px] items-center mb-[40px]">
+        <div className="flex gap-[24px] items-center mb-[10px]">
           <h2 className="font-euclid600 leading-[24px] tracking-[4px] whitespace-nowrap text-[#00093366]">
             WHAT OUR CLIENTS SAY
           </h2>

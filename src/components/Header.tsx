@@ -8,6 +8,7 @@ import Bookcall from "./Bookcall";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../utils/redux/reducers";
 import { togglescreen, togglesidebar } from "../utils/redux/slices/menumodals";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const screen = useSelector(
@@ -111,10 +112,12 @@ const Header = () => {
       <div className="bg-[url('/img1-min.jpg')] w-full h-[35%] bg-cover relative">
         <div className="absolute top-[30px] lg:top-[50px] w-full  left-0  px-[24px] lg:px-[80px]">
           <div className="bg-white flex justify-between items-center px-[40px] py-[24px]">
-            <div className="flex items-center gap-[6px]">
-              <Logo />
-              <Logotext />
-            </div>
+            <Link to="/">
+              <div className="flex items-center gap-[6px]">
+                <Logo />
+                <Logotext />
+              </div>
+            </Link>
             <BiMenu onClick={showmenu} className="text-[24px]" />
           </div>
         </div>
