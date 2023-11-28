@@ -8,18 +8,9 @@ export const Privacypolicy = () => {
   return (
     <Policylayout>
       <div className="flex flex-col w-full items-center">
-        <div className="w-[98%] md:w-[90%] lg:w-[80%]">
-          <div className="flex flex-col items-center mt-[40px] md:mt-[80px]">
-            <h1 className="font-euclid text-[48px] lg:text-[72px] leading-[56px] lg:leading-[80px] text-headertext">
-              Privacy policy
-            </h1>
-            <p className="font-euclid text-[#00093366] text-2xl">
-              Last updated{" "}
-              <span className="text-[#000933] ">November 23,2023</span>
-            </p>
-          </div>
-          <div className="flex gap-[20px] md:gap-[40px] lg:gap-[80px] my-[80px]">
-            <div className="font-euclid flex flex-col text-[#000933] min-w-[100px] md:min-w-[200px] gap-[8px] leading-[24px]">
+        <div className="w-[95%] md:w-[90%] lg:w-[80%]">
+          <div className="flex gap-[30px] md:gap-[40px] lg:gap-[80px] my-[80px]">
+            <div className="font-euclid flex flex-col mt-[216px] text-[#000933] min-w-[100px] md:min-w-[200px] gap-[8px] leading-[24px]">
               <Link to="/legal/terms-of-use" className="text-[#00093366]">
                 Terms of Service
               </Link>
@@ -33,8 +24,17 @@ export const Privacypolicy = () => {
                 Cookie Policy
               </Link>
             </div>
-            <div className="flex-1">
-              <div className="flex flex-col gap-[20px]">
+            <div className="max-w-[500px] md:max-w-[720px]">
+              <div className="flex flex-col gap-[24px]">
+                <h1 className="font-euclid text-[48px] lg:text-[72px] leading-[56px] lg:leading-[80px] text-headertext">
+                  Privacy policy
+                </h1>
+                <p className="font-euclid text-[#00093366] text-2xl">
+                  Last updated{" "}
+                  <span className="text-[#000933] ">November 23,2023</span>
+                </p>
+              </div>
+              <div className="flex flex-col mt-[80px] gap-[20px]">
                 <div className="flex flex-col">
                   <p className="font-euclid500 text-[#000933]">
                     1. Introduction
