@@ -1,3 +1,6 @@
+import scrollbarHide from "tailwind-scrollbar-hide";
+import scrollbar from "tailwind-scrollbar";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -15,8 +18,5 @@ export default {
       euclid600: ["euclid600", "sans"],
     },
   },
-  plugins: [
-    require("tailwind-scrollbar-hide"),
-    require("tailwind-scrollbar")({ nocompatible: true }),
-  ],
+  plugins: [scrollbarHide, scrollbar({ nocompatible: true })],
 };
