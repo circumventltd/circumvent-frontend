@@ -28,11 +28,11 @@ const Footer = (props: Props) => {
         </div>
         <div className="flex flex-col gap-[24px]">
           <p className="font-euclid600 text-[#0030FF] tracking-[4px]">MENU</p>
-          <div className="font-euclid flex flex-col text-[#000933] leading-[24px]">
-            <a href="">About</a>
-            <a href="#products">Products</a>
-            <a href="#services">Services</a>
-          </div>
+          <ul className="font-euclid text-[#000933] leading-[24px]">
+            <li>About</li>
+            <li>Products</li>
+            <li>Services</li>
+          </ul>
         </div>
         <div className="flex flex-col gap-[24px]">
           <p className="font-euclid600 text-[#0030FF] tracking-[4px]">MORE</p>
@@ -57,9 +57,9 @@ const Footer = (props: Props) => {
             SOCIALS
           </p>
           <ul className="font-euclid text-[#000933] leading-[24px]">
-            <Link to="">LinkedIn</Link>
-            <Link to="https://x.com/CircumventLTD">X</Link>
-            <Link to="">Instagram</Link>
+            <li>LinkedIn</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
           </ul>
         </div>
       </div>

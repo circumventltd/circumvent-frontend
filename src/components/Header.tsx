@@ -48,7 +48,7 @@ const Header = () => {
   const Menu = () => {
     return (
       <div className="p-[24px] md:p-[80px] lg:py-[40px] flex flex-col h-[30%]">
-        <div className="flex flex-col mb-[20px] md:gap-[10px]">
+        <div className="flex flex-col md:gap-[10px]">
           <menu className="flex justify-between">
             <h2 className="font-euclid600 leading-[24px] lg:text-[24px] tracking-[4px]">
               MENU
@@ -56,25 +56,16 @@ const Header = () => {
             {widthSize >= 640 ? "" : <AiOutlineClose onClick={hidemenu} />}
           </menu>
           <ul className="menulink mt-5 flex flex-col gap-[24px] lg:gap-[30px] ">
-            <a href="/" className=" flex gap-[24px] items-center ">
-              Home
-            </a>
-            <a href="" className=" flex gap-[24px] items-center ">
-              About
-            </a>
-            <a href="#services" className=" flex gap-[24px] items-center ">
-              Services
-            </a>
-            <a href="#products" className=" flex gap-[24px] items-center ">
-              Product
-            </a>
-            <a
-              href=""
+            <li className=" flex gap-[24px] items-center ">Home</li>
+            <li className=" flex gap-[24px] items-center ">About</li>
+            <li className=" flex gap-[24px] items-center ">Services</li>
+            <li className=" flex gap-[24px] items-center ">Product</li>
+            <li
               className=" flex gap-[24px] items-center whitespace-nowrap "
               onClick={() => dispatch(togglescreen("contact"))}
             >
               Contact us
-            </a>
+            </li>
           </ul>
         </div>
         <div className="mt-auto flex flex-col md:flex-row gap-[24px] md:items-center md:justify-between lg:text-[30px] leading-[24px] lg:leading-[44px]">
@@ -135,7 +126,7 @@ const Header = () => {
       {/* sidebar */}
 
       <div
-        className={`fixed top-0 z-[777] h-screen transition-all ease-in-out duration-300 ${
+        className={`fixed top-0 z-40 h-screen transition-all ease-in-out duration-300 ${
           showsidebar ? "w-full bg-[#00093366]" : "w-0"
         }`}
       >
